@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .main-section{
@@ -19,11 +20,12 @@
   height: 50px;
   color: white;
   background-color: #144272;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 18px;
 }
 
 .user-card{
@@ -31,8 +33,31 @@
   background-color: #144272;
   height: 400px;
   width: 450px;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.search-text{
+  padding: 4px;
+  outline: none;
+  margin-left: 8px;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  font-size: large;
+}
+
+.user-search-left{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0096FF;
+  color: white;
 }
