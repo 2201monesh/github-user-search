@@ -27,7 +27,16 @@ function UserCard() {
           </div>
         </div>
 
-        <div className="socials"></div>
+        <div className="socials">
+          <div className="social-1">
+            <p className='social-1-logo'>logo</p>
+            <p className='social-text'>text</p>
+          </div>
+          <div className="social-2">
+            <p className=' social-2-logo'>logo</p>
+            <p className='social-text'>text</p>
+          </div>
+        </div>
       </div>
     </div>
   )
