@@ -80,7 +80,7 @@ button{
 .info-section-heading{
   display: flex;
   /* justify-content: space-between; */
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .fullname{
@@ -89,10 +89,15 @@ button{
 }
 
 .username{
-  margin-top: -12px;
+  margin-top: 12px;
   margin-bottom: 10px;
   font-size: small;
   color: #0096FF;
+  text-decoration: none;
+}
+
+.bio{
+  margin-top: 7px;
 }
 
 .follower-box{
@@ -129,4 +134,6 @@ button{
 
 .social-text{
   margin-left: 6px;
+  text-decoration: none;
+  color: white;
 }

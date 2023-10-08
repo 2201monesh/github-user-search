@@ -11,7 +11,8 @@ function UserCard({data}) {
           {data.name ? <p className='fullname'>{data.name}</p> : <p className='fullname'>Full Name</p>}
           {/* <p>Joined date</p> */}
         </div>
-        {data.login ? <p className='username'>{data.login}</p> : <p className='username'>Login Name</p>}
+        {data.login ? <a href={`https://github.com/${data.html_url}`} className='username'>{data.login}</a> : <a className='username'>Login Name</a>}
+        {/* {data.login ? <p className='username'>{data.login}</p> : <a className='username'>Login Name</a>} */}
         {data.bio ? <p className='bio'>{data.bio}</p> : <p className='bio'>This id has no bio.</p>}
 
         <div className="follower-box">
@@ -32,7 +33,7 @@ function UserCard({data}) {
         <div className="socials">
           <div className="social-1">
             <FaXTwitter className="social-1-logo" />
-            {data.twitter_username ? <p className='social-text'>{data.twitter_username}</p> :<p className='social-text'>Twitter username</p>}
+            {data.twitter_username ? <a href={`https://twitter.com/${data.twitter_username}`} className='social-text'>{data.twitter_username}</a> :<a className='social-text'>Twitter username</a>}
           </div>
           <div className="social-2">
             <FaLocationDot className="social-2-logo" />
