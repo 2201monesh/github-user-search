@@ -74,6 +74,7 @@ button{
 .profile-image{
   width: 100px;
   height: 100px;
+  border-radius: 10px;
 }
 
 .info-section-heading{
@@ -83,11 +84,15 @@ button{
 }
 
 .fullname{
-  padding-right: 130px;
+  /* padding-right: 80px; */
+  font-weight: bold;
 }
 
 .username{
-  margin-bottom: 15px;
+  margin-top: -12px;
+  margin-bottom: 10px;
+  font-size: small;
+  color: #0096FF;
 }
 
 .follower-box{
@@ -95,7 +100,7 @@ button{
   height: 80px;
   background-color: #0A2647;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -108,6 +113,10 @@ button{
   align-items: center;
 }
 
+.count{
+  font-weight: bold;
+}
+
 .socials{
   display: flex;
   /* justify-content: space-between; */
@@ -115,7 +124,7 @@ button{
 
 .social-1, .social-2{
   display: flex;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .social-text{

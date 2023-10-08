@@ -8,35 +8,35 @@ function UserCard({data}) {
       <div className="avatar-img"><img className='profile-image' src={data.avatar_url} alt="image" /></div>
       <div className="info-section">
         <div className="info-section-heading">
-          <p className='fullname'>Full Name</p>
-          <p>Joined date</p>
+          {data.name ? <p className='fullname'>{data.name}</p> : <p className='fullname'>Full Name</p>}
+          {/* <p>Joined date</p> */}
         </div>
-        <p className='username'>Username</p>
-        <p className='bio'>Bio</p>
+        {data.login ? <p className='username'>{data.login}</p> : <p className='username'>Login Name</p>}
+        {data.bio ? <p className='bio'>{data.bio}</p> : <p className='bio'>This id has no bio.</p>}
 
         <div className="follower-box">
           <div className="repos">
             <p>Repos</p>
-            <p>0</p>
+            {data.public_repos ? <p className='count'>{data.public_repos}</p> : <p className='count'>0</p>}
           </div>
           <div className="followers">
             <p>followers</p>
-            <p>100</p>
+            {data.followers ? <p className='count'>{data.followers}</p> : <p className='count'>0</p>}
           </div>
           <div className="following">
             <p>following</p>
-            <p>100</p>
+            {data.following ? <p className='count'>{data.following}</p> : <p className='count'>0</p>}
           </div>
         </div>
 
         <div className="socials">
           <div className="social-1">
             <FaXTwitter className="social-1-logo" />
-            <p className='social-text'>text</p>
+            {data.twitter_username ? <p className='social-text'>{data.twitter_username}</p> :<p className='social-text'>Twitter username</p>}
           </div>
           <div className="social-2">
             <FaLocationDot className="social-2-logo" />
-            <p className='social-text'>text</p>
+            {data.location ? <p className='social-text'>{data.location}</p> : <p className='social-text'>Location</p>}
           </div>
         </div>
       </div>
