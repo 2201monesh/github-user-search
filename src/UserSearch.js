@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import { RiSearchLine } from 'react-icons/ri';
 
-function UserSearch() {
+function UserSearch({onClick}) {
 
     const[username, setUsername] = useState('');
+    const [data, setData] = useState([]);
 
     const clickHandler = () => {
         fetch(`https://api.github.com/users/${username}`)
          .then(response => response.json())
-         .then( data => console.log(data))
+         .then( data => setData(data))
          .catch( error => console.error(error));
 
          setUsername("");
+        //  console.log(data);
+         onClick(data);
     }
 
     const handleTextChange = (e) => {

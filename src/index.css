@@ -71,7 +71,9 @@ button{
   border-radius: 10px;
 }
 
-.info-section{
+.profile-image{
+  width: 100px;
+  height: 100px;
 }
 
 .info-section-heading{

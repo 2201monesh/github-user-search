@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaLocationDot } from 'react-icons/fa6';
 
-function UserCard() {
+function UserCard({data}) {
   return (
     <div className='user-card'>
-      <div className="avatar-img">Avatar image</div>
+      <div className="avatar-img"><img className='profile-image' src={data.avatar_url} alt="image" /></div>
       <div className="info-section">
         <div className="info-section-heading">
           <p className='fullname'>Full Name</p>
@@ -29,11 +31,11 @@ function UserCard() {
 
         <div className="socials">
           <div className="social-1">
-            <p className='social-1-logo'>logo</p>
+            <FaXTwitter className="social-1-logo" />
             <p className='social-text'>text</p>
           </div>
           <div className="social-2">
-            <p className=' social-2-logo'>logo</p>
+            <FaLocationDot className="social-2-logo" />
             <p className='social-text'>text</p>
           </div>
         </div>
